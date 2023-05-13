@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Russo One", sans-serif;
+  scroll-behavior: smooth;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: cyan;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    transition: all .6s;
+}
+nav a:hover {
+    color: red;
+}
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: large;
+}
+.last-section {
+  background-color: rgb(76, 2, 15);
+  font-size: 40px;
+  font-weight: bold;
+}
+.creative {
+  background-color: black;
+}
+#gradientBack {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    var(--trig-deg),
+    rgba(252, 176, 69, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(131, 58, 180, 1) 100%
+  );
+}
+#gradientBack2 {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    var(--trig-deg),
+    rgb(160, 252, 69) 0%,
+    rgb(110, 106, 210) 50%,
+    rgb(242, 244, 102) 100%
+  );
+}
+#flip {
+  perspective-origin: 25% 75%;
+  transform-style: preserve-3d;
+  transform: rotate3d(1, 0.1, 0.1, var(--trig-deg));
+}
+
+#shadow {
+  text-shadow: var(--trig-px) var(--trig-px) 0px rgba(255, 110, 68, 0.48);
+}
+
+
+/* 1) вкладеність */
+nav ul li .menu-item {
+  color: red;
+}
+nav ul li a {
+  color: red;
+}
+nav ul #test  {
+  color: red;
+}
+
+/* 2) комбінація селекторів (або групування) */
+ h1,p {
+  color: green;
+}
+h1, .test, .test2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(130, 109, 109);
+}
